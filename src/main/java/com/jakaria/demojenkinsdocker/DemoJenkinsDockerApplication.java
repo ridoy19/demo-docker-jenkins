@@ -17,6 +17,6 @@ public class DemoJenkinsDockerApplication {
 
 	@GetMapping
 	public ResponseEntity<String> sayHello() {
-		return new ResponseEntity<>("Hello, from working Docker with Jenkins", HttpStatus.OK);
+		return new ResponseEntity<>("Hello, Jakaria", HttpStatus.OK);
 	}
 }
