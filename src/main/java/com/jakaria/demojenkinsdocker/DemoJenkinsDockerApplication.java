@@ -21,4 +21,8 @@ public class DemoJenkinsDockerApplication {
 	public ResponseEntity<String> sayHello(@RequestParam String name) {
 		return new ResponseEntity<>("Hello, " + name, HttpStatus.OK);
 	}
+	@GetMapping("/test")
+	public ResponseEntity<String> sayWelcome(@RequestParam String name) {
+		return new ResponseEntity<>("Welcome " + name , HttpStatus.OK);
+	}
 }
